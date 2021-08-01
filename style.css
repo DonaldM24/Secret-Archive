@@ -318,7 +318,7 @@ a.anchor {
 }
 
 .featured-container {
-	display: flex;
+	display: block;
 	height: 700px;
 	width: 1300px;
 	height: 900px;
@@ -342,7 +342,7 @@ a.anchor {
 }
 
 .featured h5 {
-	display:block;
+	display: block;
 	border-bottom: 4px solid black;
 	width: 100%;
 	font-size: 35px;
@@ -352,13 +352,13 @@ a.anchor {
 .product {
 	background-blend-mode: multiply;
 	position: relative;
-	margin-top: 40px;
 	display: inline-flex;
+	flex-direction: row;
+	margin-top: 40px;
 	width: 300px;
 	height: 400px;
 	background-size: 300px 300px;
 	background-repeat: no-repeat;
-	justify-content: space-around;
 	text-align: center;
 }
 
@@ -484,21 +484,21 @@ a.anchor {
 
 .imagetop1 {
 	background-position: bottom;
-	background-image: url("https://www.rebecca-recommends.com/wp-content/uploads/2017/08/fashion-banner.jpg");
+	background-image: url("https://www.amsterdammagazine.com/app/uploads/2020/09/shops-fashion-number-nine-2.jpg");
 }
 
 .imagetop2 {
 	background-position: bottom;
-	background-image: url("https://www.rebecca-recommends.com/wp-content/uploads/2017/08/fashion-banner.jpg");
+	background-image: url("https://www.amsterdammagazine.com/app/uploads/2020/09/shops-fashion-number-nine-2.jpg");
 }
 
 .imagetop3 {
 	background-position: bottom;
-	background-image: url("https://www.rebecca-recommends.com/wp-content/uploads/2017/08/fashion-banner.jpg");
+	background-image: url("https://www.amsterdammagazine.com/app/uploads/2020/09/shops-fashion-number-nine-2.jpg");
 }
 
 .page-container {
-	display: block;
+	display: flex;
 	height: 700px;
 	width: 1300px;
 	height: 900px;
