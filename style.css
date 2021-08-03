@@ -8,6 +8,7 @@
   	font-family: 'Questrial', sans-serif;
   	text-decoration: none;
 	box-sizing: border-box;
+	list-style-type: none;
 }
 
 #globalheader {
@@ -41,7 +42,7 @@
 	width: 100%;
 	height: 69px;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 	z-index: 999;
 	border-bottom: 1px solid transparent;
 }
@@ -87,7 +88,7 @@
 	width: 350px;
 	height: 100%;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	list-style: none;
 	align-items: center;
 }
@@ -98,8 +99,6 @@
 }
 
 .misc-container {
-	padding-left: 70px;
-	justify-content: left;
 	display: flex;
 	width: 200px;
 	height: 100%;
@@ -107,13 +106,11 @@
 }
 
 .search {
-	padding-right: 5px;
 	transform: translateY(35%);
 	font-size: 24px;
 }
 
 .cart {
-	padding-left: 5px;
 	transform: translateY(35%);
 	font-size: 24px;
 }
@@ -213,6 +210,7 @@
 	opacity: 70%;
 	transition: 0.3s ease-out;
 }
+
 #arrow-left {
 	left: 5%;
 	font-size: 30px;
@@ -247,44 +245,33 @@ a.anchor {
     visibility: hidden;
 }
 
+.heading h5 {
+	font-size: 35px;
+	justify-content: center;
+	text-align: center;
+	border-bottom: 4px solid black;
+	width: 1300px;
+}
+
 .brands-container {
 	display: flex;
-	height: 500px;
-	width: 1300px;
 	margin-top: 100px;
-	justify-content: center;
 	margin-left: auto;
 	margin-right: auto;
-}
-.brands {
-	margin-top: 0;
-}
-.brands h5 {
-	margin-left: auto;
-	margin-right: auto;
-	border-bottom: 4px solid black;
-	width: 100%;
-	font-size: 35px;
-	text-align: center;
+	justify-content: space-between;
+	align-content: center;
+	flex-wrap: wrap;
+	width: 1300px;
 }
 
 .tileb {
 	margin-top: 40px;
-	margin-right: 20px;
 	display: inline-flex;
 	width: 400px;
 	height: 400px;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	background-blend-mode: multiply;
-}
-
-.tileb:first-of-type {
-    margin-left: 0;
-}
-
-.tileb:last-of-type {
-    margin-right: 0;
 }
 
 .tileb a{
@@ -317,19 +304,23 @@ a.anchor {
 	background-position: center;
 }
 
-.featured-container {
-	display: block;
-	height: 700px;
-	width: 1300px;
-	height: 900px;
-	margin-top: 100px;
-	justify-content: space-around;
+.featured {
+	display: flex;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 50px;
+	justify-content: space-between;
+	align-content: center;
+	flex-wrap: wrap;
+	width: 1300px;
 }
-.featured {
-	margin-top: 0;
+
+.featured-container a {
+	color: black;
+}
+
+.featured-container a:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+	transition: 0.3s ease-out;
 }
 
 .featured a {
@@ -339,14 +330,6 @@ a.anchor {
 .featured a:hover {
 	background-color: rgba(0, 0, 0, 0.5);
 	transition: 0.3s ease-out;
-}
-
-.featured h5 {
-	display: block;
-	border-bottom: 4px solid black;
-	width: 100%;
-	font-size: 35px;
-	text-align: center;
 }
 
 .product {
@@ -360,14 +343,6 @@ a.anchor {
 	background-size: 300px 300px;
 	background-repeat: no-repeat;
 	text-align: center;
-}
-
-.product:first-of-type {
-    margin-left: 0;
-}
-
-.product:last-of-type {
-    margin-right: 0;
 }
 
 .product-caption {
@@ -498,37 +473,57 @@ a.anchor {
 }
 
 .page-container {
-	display: flex;
-	height: 700px;
+	margin-top: 70px;
+	margin-left: auto;
+	margin-right: auto;
 	width: 1300px;
-	height: 900px;
-	margin-top: 100px;
-	justify-content: space-around;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 50px;
+	margin-bottom: 70px;
 }
 
-.page-container h5 {
+.shop {
+	display: flex;
 	margin-left: auto;
 	margin-right: auto;
-	border-bottom: 4px solid black;
-	width: 100%;
-	font-size: 35px;
-	text-align: center;
+	justify-content: space-between;
+	align-content: center;
+	flex-wrap: wrap;
+	width: 1300px;
 }
 
+.shop a {
+	color: black;
+}
 
+.shop a:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+	transition: 0.3s ease-out;
+}
 
-.about {
+.archive {
+	display: flex;
 	margin-left: auto;
 	margin-right: auto;
-	width: 900px;
-	height: 50vh;
-	justify-content: center;
-	line-height: 3rem;
+	justify-content: space-between;
+	align-content: center;
+	flex-wrap: wrap;
+	width: 1300px;
+}
+
+.archive a {
+	color: black;
+}
+
+.archive a:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+	transition: 0.3s ease-out;
 }
 
 .about p {
-	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	font-size: 18px;
+	width: 900px;
+	justify-content: center;
+	text-align: center;
 }
