@@ -326,16 +326,6 @@ a.anchor {
 	width: 1300px;
 }
 
-
-.featured-container a {
-	color: black;
-}
-
-.featured-container a:hover {
-	background-color: rgba(0, 0, 0, 0.5);
-	transition: 0.3s ease-out;
-}
-
 .featured a {
 	color: black;
 }
@@ -403,6 +393,28 @@ a.anchor {
 .product8 {
 	background-image: url("https://cdn.shopify.com/s/files/1/0270/1099/0133/products/image_ca17380d-28ae-4c51-9583-77fd64758c55_900x.jpg?v=1625265138");
 }
+/*
+@media screen and (max-width:1440px) {
+
+	.brands-container {
+		width: 975px;
+	}
+
+	.tileb {
+		height: 200px;
+		width: 200px;
+	}
+
+	.featured {
+		width: 975px;
+	}
+
+	.product {
+		width: 200px;
+		height: 400px;
+		background-size: 200px 200px;
+	}
+} */
 
 #globalfooter {
 	background-color: black;
