@@ -17,3 +17,23 @@ function viewportToPixels(value) {
         mobile.classList.remove('active')
     }
   }
+
+//Menu Icon
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("open");
+    navMenu.classList.toggle("open");
+}
+
+const navLink = document.querySelectorAll(".navitem");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("open");
+    navMenu.classList.remove("open");
+}  
