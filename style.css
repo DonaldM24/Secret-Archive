@@ -112,6 +112,7 @@
 }
 
 .hamburger {
+	margin-right: 30px;
 	background-color: transparent;
 	border: 0;
 	color: white;
@@ -153,7 +154,8 @@
 	.nav {
 		position: fixed;
         left: -100%;
-        top: 100px;
+		top: 100px;
+        padding-top: 100px;
         flex-direction: column;
         background-color: black;
         width: 100vw;
@@ -305,8 +307,10 @@ a.anchor {
     visibility: hidden;
 }
 
-.heading h5 {
-	font-size: 35px;
+.heading p{
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 50px;
 	justify-content: center;
 	text-align: center;
 	border-bottom: 4px solid black;
@@ -324,7 +328,7 @@ a.anchor {
 	flex-wrap: wrap;
 	width: 66vw;
 	max-width: 1300px;
-	height: 1300px;
+	height: 900px;
 	padding-bottom: 100px;
 }
 
@@ -333,57 +337,92 @@ a.anchor {
 	justify-content: center;
 	align-items: center;
 	background-blend-mode: multiply;
+	background-color: rgba(0, 0, 0, 0.301);
+}
+
+.brands-container a{
+	top: 45%;
+	color: white;
+	font-size: 40px;
+}
+
+.tileb p:hover{
+	opacity: 70%;
 }
 
 .tileb-1 {
 	margin-top: 40px;
 	float: left;
-	width: 33%;
+	width: 40%;
 	height: 100%;
 }
 
 .tileb-2 {
 	margin-top: 40px;
 	float: right;
-	width: 66%;
+	width: 59%;
 	height: 49.5%;
 }
 
 .tileb-3 {
 	margin-top: 1%;
 	float: right;
-	width: 66%;
+	width: 59%;
 	height: 49.5%;
-}
-
-.tileb a{
-	top: 45%;
-	color: white;
-	font-size: 40px;
 }
 
 .tileb a:hover{
 	opacity: 70%;
 }
 
-.tileb:hover {
-	background-color: rgba(0, 0, 0, 0.301);
-	transition: 0.3s ease-out;
-}
-
 .tileb-1 {
-	background-image: url("https://sidewalkhustle.com/wp-content/uploads/2016/03/Issey-Miyake-Exhibition-Tokyo-6.jpg");
-	background-position: center;
+	background-image: url("https://www.highsnobiety.com/static-assets/thumbor/HMawwZfI7MJippfG8uDahkkE-X0=/1600x2399/www.highsnobiety.com/static-assets/wp-content/uploads/2021/06/07195417/kapital-fw21-collection-lookbook-8.jpg");
+	background-size: cover;
 }
 
 .tileb-2 {
-	background-image: url("https://cdn.shopify.com/s/files/1/0408/9909/files/Adidas_Rick_Owens_DRKSHDW_Ramones_-Feature-LV-5928_1024x1024.jpg?v=1477422793");
-	background-position: top;
+	background-image: url("https://gothammag.com/get/files/image/galleries/Rick-Owens-Men-SS22-Venice-03-main.jpg");
+	background-size: cover;
 }
 
 .tileb-3 {
-	background-image: url("https://www.esquireme.com/public/images/2020/03/29/Maison-Margiela-Lead.jpg");
-	background-position: center;
+	background-image: url("https://cloudfront-eu-central-1.images.arcpublishing.com/businessoffashion/5PBS745KMRFWHNS7K3MAEN7E3A.jpg");
+	background-size: cover;
+}
+
+@media screen and (max-width:768px) {
+
+	.brands-container {
+		width: 66vw;
+		height: 700px;
+	}
+
+	.brands-container a{
+		top: 45%;
+		color: white;
+		font-size: 25px;
+	}
+
+	.tileb {
+		margin-top: 5%;
+		margin-bottom: auto;
+		float: none;
+		width: 100%;
+		height: 33%;
+		background-color: rgba(0, 0, 0, 0.301);
+	}
+
+	.tileb-1 {
+		background-image: url("");
+	}
+
+	.tileb-2 {
+		background-image: url("https://video-images.vice.com/articles/5f8eaef6be6ee6009c1a040e/lede/1603186465680-1603097137462-moncler-rick-owensimages2jpegcrop1xw3a08428xh3b0xw2c0.jpeg?crop=0.9982222222222221xw%3A1xh%3Bcenter%2Ccenter&resize=650%3A*&output-quality=50");
+	}
+
+	.tileb-3 {
+		background-image: url("https://rob-hill.co.uk/wp-content/uploads/sb-instagram-feed-images/121886341_394953718560575_3919253947182823748_nfull.jpg");
+	}
 }
 
 .page-container {
@@ -418,7 +457,7 @@ a.anchor {
 	margin-top: 40px;
 	width: 300px;
 	height: 400px;
-	background-size: 300px 300px;
+	background-size: 100%;
 	background-repeat: no-repeat;
 	text-align: center;
 }
@@ -525,7 +564,7 @@ a.anchor {
 	justify-content: center;
 }
 
-.about p {
+.text p {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 40px;
